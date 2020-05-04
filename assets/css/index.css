@@ -27,7 +27,7 @@ a {
     padding:2rem;
 }
 
-.title {
+.title,.titles {
     padding:0.25rem;
     background-color:#9e9a9a;
     color:white;
@@ -111,7 +111,7 @@ img {
 }
 
 footer{
-    margin-top:5rem;
+    margin-top:8rem;
     font-size:.50rem;
     text-align:center;
 }
