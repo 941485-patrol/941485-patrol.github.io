@@ -74,7 +74,7 @@ ul {
 }
 
 img {
-    width:50%;
+    width:35%;
 }
 
 .mb-1 {
@@ -118,12 +118,20 @@ footer{
 @media screen and (min-width:768px) {
 
     .container-fluid {
-        padding:5rem;
+        padding-top:2rem;
+        padding-bottom:5rem;
+        padding-left:5rem;
+        padding-right:5rem;
     }
     
     .pitch, .skills, .projects {
         display:flex;
         flex-direction:row;
+        flex-flow:wrap;
+    }
+
+    .pitch-div {
+        flex:25%;
     }
 
     .skills-div{
