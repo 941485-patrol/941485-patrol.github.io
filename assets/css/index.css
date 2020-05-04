@@ -1,6 +1,7 @@
 :root {
     font-size:18px;
     font-family:myFont;
+    text-shadow: #9e9a9a 1px 1px 0;
 }
 
 body, h4, h5, ul {
@@ -29,6 +30,7 @@ a {
 .title {
     padding:0.25rem;
     background-color:#9e9a9a;
+    color:white;
 }
 
 .sub-title{

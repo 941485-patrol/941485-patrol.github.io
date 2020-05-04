@@ -1,11 +1,24 @@
-.pitch-div, .skills-div, .tools-div, .proj-div, .exp-div{
+.slide-div{
     opacity:0;
     visibility:hidden;
     transform: translateY(20vh);
     transition:.50s ease-in-out;
 }
 
-.pitch-div.is-visible, .skills-div.is-visible, .tools-div.is-visible, .proj-div.is-visible, .exp-div.is-visible{
+.slide-div.is-visible{
+    opacity:1;
+    visibility:visible;
+    transform:none;
+}
+
+.title {
+    opacity:0;
+    visibility:hidden;
+    transform:scaleX(0);
+    transition:.50s ease-in-out
+}
+
+.title.is-visible {
     opacity:1;
     visibility:visible;
     transform:none;

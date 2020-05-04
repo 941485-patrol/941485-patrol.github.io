@@ -1,5 +1,6 @@
 let toTop = document.getElementById("to-top");
 let slideDiv = document.getElementsByClassName("slide-div");
+let title = document.getElementsByClassName("title");
 
 toTop.addEventListener("click", (event)=> {
 
@@ -14,6 +15,11 @@ window.addEventListener("scroll", ()=> {
         fadeIt(slideDiv[i])
     }
 
+    for(var i = 0; i<title.length; i++)
+    {
+        fadeIt(title[i])
+    }
+
     if(scrollY > 100) 
     {
         toTop.style.display = "block"
@@ -26,7 +32,7 @@ window.addEventListener("scroll", ()=> {
 
 const fadeIt = (content)=>{
 
-    if (scrollY > content.offsetTop-410)
+    if (scrollY > content.offsetTop-450)
     {
         if (!content.classList.contains("is-visible"))
         {
