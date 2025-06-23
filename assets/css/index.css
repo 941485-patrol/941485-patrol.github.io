@@ -1,7 +1,7 @@
 :root {
     font-size:18px;
     font-family:myFont;
-    text-shadow: #9e9a9a 1px 1px 0;
+    /* text-shadow: #9e9a9a 1px 1px 0; */
 }
 
 body, h4, h5, ul {
@@ -27,7 +27,7 @@ a {
     padding:2rem;
 }
 
-.title,.titles {
+.title,.titles,.title-no-slide {
     padding:0.25rem;
     background-color:#9e9a9a;
     color:white;
@@ -57,12 +57,22 @@ a {
     align-items:center;
     flex:1;
     margin-bottom:1.25rem;
+    justify-content:center;
+}
+
+.proj-tool-div {
+   text-align: center;
 }
 
 .skills-div  {
     display:flex;
     flex-direction:column;
     align-items:center;
+}
+
+.proj-div {
+    width: 100%;
+    flex: none;
 }
 
 .pitch-div > p {
@@ -130,6 +140,8 @@ footer{
         display:flex;
         flex-direction:row;
         flex-flow:wrap;
+        justify-content:center;
+        align-items: flex-start;
     }
 
     .pitch-div {
@@ -146,12 +158,16 @@ footer{
         margin-left:1rem;
     }
 
+    .proj-div {
+        width: 33.33333%;
+    }
+
 
     .job-title {
         margin-left:1rem;
     }
 
-    .job-desc {
+    .job-desc, .contact-title {
         margin-left:2rem;
     }
 
